@@ -74,12 +74,12 @@ h6 {
     padding: 0 0 10px 0;
     font-weight: normal;
     line-height: normal;
-    color: white;
+    color: #FEFBF6;
     margin: 0
 }
 
 h1 {
-    font-size: 24px
+    font-size: 45px
 }
 
 h2 {
@@ -434,6 +434,7 @@ button {
     width: 100%;
     float: left;
     margin-top: 90px;
+    
 }
 
 .services_img {
@@ -444,7 +445,6 @@ button {
     text-align: center;
     gap: 3rem;
 }
-
 .btn_main {
     width: 170px;
     margin: 0 auto;
@@ -508,7 +508,7 @@ button {
 .about_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 15px;
     color: #1f1f1f;
     margin: 0px;
     padding-top: 40px;
@@ -535,7 +535,7 @@ button {
 
 .readmore_bt a:hover {
     color: #ffffff;
-    background-color: #2b2278;
+    background-color: #F97300;
 }
 
 .about_img {
