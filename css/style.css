@@ -377,7 +377,11 @@ button {
     color:white;
     text-align: center;
 }
-
+.whatsapp {
+    height: 18px;
+    width: 18px;
+    padding-bottom: 1px;
+}
 .read_bt {
     width: 200px;
     margin: 0 auto;
