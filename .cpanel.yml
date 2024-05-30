@@ -1,5 +1,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/vacatkyr/public_html/
-    - /bin/cp css/ $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
