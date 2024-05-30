@@ -395,7 +395,7 @@ button {
     color: #FFF7FC;
     background-color: #0C0C0C;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 0px;t
     border-radius: 30px;
     margin-top: 50px;
     font-weight: 400;
@@ -405,7 +405,6 @@ button {
     background-color: #F97300;
     color: white;
 }
-
 
 /* banner section end */
 
@@ -492,6 +491,7 @@ button {
     width: 100%;
     float: left;
     padding-bottom: 90px;
+    padding-right: 70px;
 }
 
 .about_taital_main {
@@ -518,7 +518,8 @@ button {
     font-size: 19px;
     color: #1f1f1f;
     margin: 0px;
-    padding-top: 40px;
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 .readmore_bt {
@@ -978,7 +979,6 @@ button {
     float: left;
     padding: 30px 5px;
 }
-
 .location_main {
     width: 100%;
     margin: 0 auto;
