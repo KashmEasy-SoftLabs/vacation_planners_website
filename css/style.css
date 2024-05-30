@@ -79,7 +79,8 @@ h6 {
 }
 
 h1 {
-    font-size: 45px
+    font-size: 45px;
+
 }
 
 h2 {
@@ -346,6 +347,9 @@ button {
     background-size: 100%;
     padding: 10px 0px 0px 0px;
 }
+.text-white {
+    font-family: "Danfo", serif;
+}
 
 
 /* header section end */
@@ -395,7 +399,7 @@ button {
     color: #FFF7FC;
     background-color: #0C0C0C;
     text-align: center;
-    padding: 10px 0px;t
+    padding: 10px 0px;
     border-radius: 30px;
     margin-top: 50px;
     font-weight: 400;
@@ -415,6 +419,8 @@ button {
     width: 100%;
     float: left;
     padding-bottom: 90px;
+    padding-left: 100px;
+    padding-right: 50px;
 }
 
 .services_taital {
@@ -423,6 +429,7 @@ button {
     font-size: 50px;
     color: #1f1f1f;
     font-weight: bold;
+    
 }
 
 .services_text {
@@ -497,7 +504,6 @@ button {
 .about_taital_main {
     width: 100%;
     padding-left: 100px;
-    padding-top: 70px;
 }
 
 .padding_right_0 {
@@ -519,7 +525,7 @@ button {
     color: #1f1f1f;
     margin: 0px;
     padding-top: 20px;
-    padding-right: 20px;
+    padding-right: px;
 }
 
 .readmore_bt {
