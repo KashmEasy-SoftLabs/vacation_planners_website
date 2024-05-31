@@ -5,6 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
 @font-face {
     font-family: "Righteous";
     src: url("../fonts/BalooChettan-Regular.ttf");
@@ -118,7 +119,7 @@ h4 a,
 h5 a,
 h6 a {
     color: #212121;
-    text-decoration: none!important;
+    text-decoration: none !important;
     opacity: 1
 }
 
@@ -163,7 +164,7 @@ img {
     height: auto;
 }
 
- :focus {
+:focus {
     outline: 0;
 }
 
@@ -233,11 +234,9 @@ button {
     width: 100%;
     float: left;
     background:
-    linear-gradient(
-        rgba(0, 0, 0, 0.4), 
-        rgba(0, 0, 0, 0.4)
-      ),
-    url(../images/pexels-photo-2907578.jpeg);
+        linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)),
+        url(../images/pexels-photo-2907578.jpeg);
     height: auto;
     background-size: 100%;
     padding: 0px 0px 20px 0px;
@@ -323,7 +322,7 @@ button {
 }
 
 .menu_main li a {
-    color:white;
+    color: white;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 20px;
@@ -336,7 +335,7 @@ button {
 
 .mb-lg-0,
 .my-lg-0 {
-    margin-bottom: 0!important;
+    margin-bottom: 0 !important;
     width: 20%;
     float: left;
 }
@@ -347,9 +346,11 @@ button {
     background-size: 100%;
     padding: 10px 0px 0px 0px;
 }
+
 .text-white {
     font-family: "Danfo", serif;
 }
+
 /* header section end */
 
 
@@ -365,7 +366,7 @@ button {
     width: 100%;
     float: left;
     font-size: 80px;
-    color:white;
+    color: white;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -376,14 +377,16 @@ button {
     width: 63%;
     margin: 0 auto;
     font-size: 18px;
-    color:white;
+    color: white;
     text-align: center;
 }
+
 .whatsapp {
     height: 18px;
     width: 18px;
     padding-bottom: 1px;
 }
+
 .read_bt {
     width: 200px;
     margin: 0 auto;
@@ -427,7 +430,7 @@ button {
     font-size: 50px;
     color: #1f1f1f;
     font-weight: bold;
-    
+
 }
 
 .services_text {
@@ -442,7 +445,7 @@ button {
     width: 100%;
     float: left;
     margin-top: 90px;
-    
+
 }
 
 .services_img {
@@ -453,9 +456,11 @@ button {
     text-align: center;
     gap: 3rem;
 }
+
 .space {
     margin-top: 80px;
 }
+
 .btn_main {
     width: 170px;
     margin: 0 auto;
@@ -625,15 +630,17 @@ button {
         transform: translate(-50%, -50%) scale(1);
         opacity: 1
     }
+
     100% {
         transform: translate(-50%, -50%) scale(1.2);
         opacity: 0;
     }
 }
 
-.margin_top_90{
+.margin_top_90 {
     margin-top: 90px;
 }
+
 /* blog section end */
 
 
@@ -699,6 +706,7 @@ button {
 
 .client_taital_right {
     width: 60%;
+    padding-left: 20px;
     float: left;
 }
 
@@ -742,7 +750,7 @@ button {
     /* width: 20px;
     height: 20px;
     border-radius: 100%;*/
-    background-color: #8781bd; 
+    background-color: #8781bd;
     bottom: -130px;
 }
 
@@ -854,6 +862,7 @@ button {
     float: left;
     padding-bottom: 90px;
 }
+
 .contact_taital {
     width: 100%;
     float: left;
@@ -862,12 +871,14 @@ button {
     text-align: center;
     font-weight: bold;
 }
+
 .email_text {
     width: 70%;
     margin: 0 auto;
     text-align: center;
     padding-top: 120px;
 }
+
 .email-bt {
     width: 100%;
     float: left;
@@ -878,6 +889,7 @@ button {
     border: 0px;
     border: 1px solid #2b2278 !important;
 }
+
 .massage-bt {
     width: 100%;
     float: left;
@@ -888,11 +900,13 @@ button {
     border: 0px;
     border: 1px solid #2b2278 !important;
 }
+
 .send_btn {
     width: 170px;
     margin: 0 auto;
     text-align: center;
 }
+
 .send_btn a {
     width: 100%;
     float: right;
@@ -903,10 +917,12 @@ button {
     background-color: #000d10;
     padding: 7px;
 }
+
 .send_btn a:hover {
     color: #ffffff;
     background-color: #2b2278;
 }
+
 /* contact section end */
 
 
@@ -983,6 +999,7 @@ button {
     float: left;
     padding: 30px 5px;
 }
+
 .location_main {
     width: 100%;
     margin: 0 auto;
@@ -1032,6 +1049,7 @@ button {
 .copyright_text a:hover {
     color: #e27141;
 }
+
 .image {
     display: block;
     margin-left: auto;
