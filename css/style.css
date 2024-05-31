@@ -229,6 +229,7 @@ button {
 }
 
 
+
 /* header section start */
 
 .header_section {
@@ -238,9 +239,16 @@ button {
         linear-gradient(rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0.4)),
         url(../images/pexels-photo-2907578.jpeg);
-    height: auto;
+    height: 100vh;
     background-size: 100%;
     padding: 0px 0px 20px 0px;
+}
+
+/*mobile screen*/
+@media only screen and (max-width: 600px) {
+    .header_section {
+        height: 80vh;
+    }
 }
 
 .bg-light {
@@ -442,6 +450,17 @@ button {
     margin: 0px;
 }
 
+/*mobile screen*/
+@media only screen and (max-width: 600px) {
+    .services_text {
+
+        font-size: 28px;
+
+    }
+
+
+}
+
 .services_section_2 {
     width: 100%;
     float: left;
@@ -460,6 +479,15 @@ button {
 
 .space {
     margin-top: 80px;
+}
+
+/*mobile screen*/
+@media only screen and (max-width: 600px) {
+    .space {
+        height: 0px;
+    }
+
+
 }
 
 .btn_main {
@@ -570,8 +598,10 @@ button {
 .blog_section {
     width: 100%;
     float: left;
+
+
     background:
-        linear-gradient(rgba(0, 0, 0, 0.4),
+        linear-gradient(rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.4)),
         url(../images/blog-bg.png);
     /* background-image: url(../images/blog-bg.png); */
@@ -1062,4 +1092,16 @@ button {
     margin-left: auto;
     margin-right: auto;
     width: 30%;
+}
+
+/*mobile screen*/
+@media only screen and (max-width: 600px) {
+    .copyright_text {
+        font-size: 16px;
+    }
+
+    .image {
+        padding-bottom: 20px;
+    }
+
 }
