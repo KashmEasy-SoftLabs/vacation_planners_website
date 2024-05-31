@@ -337,6 +337,11 @@ button {
     font-size: 20px;
 }
 
+.mobile_menu li a:hover {
+    color: white;
+    background-color: #F97300 !important;
+}
+
 .menu_main li a:hover {
     color: #ffffff;
     background-color: #F97300;
