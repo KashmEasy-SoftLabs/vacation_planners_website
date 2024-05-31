@@ -961,6 +961,16 @@ button {
     border-radius: 20px;
     border: 0px;
 }
+.adress {
+    float: left;
+    color: white;
+    width: 100%;
+    border-radius: 20px;
+    padding: 0px;   
+}
+.dmc {
+    color: white;
+}
 
 .subscribe_bt {
     float: right;
