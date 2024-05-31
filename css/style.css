@@ -484,7 +484,7 @@ button {
 /*mobile screen*/
 @media only screen and (max-width: 600px) {
     .space {
-        height: 0px;
+        margin-top: 0px;
     }
 
 
@@ -997,13 +997,15 @@ button {
     border-radius: 20px;
     border: 0px;
 }
+
 .adress {
     float: left;
     color: white;
     width: 100%;
     border-radius: 20px;
-    padding: 0px;   
+    padding: 0px;
 }
+
 .dmc {
     color: white;
 }
