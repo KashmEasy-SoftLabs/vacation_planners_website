@@ -247,7 +247,7 @@ button {
 /*mobile screen*/
 @media only screen and (max-width: 600px) {
     .header_section {
-        height: 100vh;
+        height: 115vh;
     }
 }
 
