@@ -276,7 +276,7 @@ button {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    font-size: 18px;
+    font-size: 13px;
     text-transform: uppercase;
     color: #fff;
 }
@@ -378,7 +378,7 @@ button {
 .banner_taital {
     width: 100%;
     float: left;
-    font-size: 80px;
+    font-size: 30px !important;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -792,7 +792,9 @@ button {
     height: 20px;
     border-radius: 100%;*/
     background-color: #8781bd;
-    bottom: -130px;
+    position: relative;
+    bottom: -50px
+
 }
 
 .carousel-indicators .active {
