@@ -37,6 +37,8 @@
 * {
     box-sizing: border-box !important;
     transition: ease all 0.5s;
+    padding: 0px;
+    margin: 0px;
 }
 
 html {
@@ -805,8 +807,7 @@ button {
     border-radius: 100%;*/
     background-color: #8781bd;
     position: relative;
-    bottom: -50px
-
+    bottom: -50px;
 }
 
 .carousel-indicators .active {
@@ -1133,5 +1134,8 @@ button {
     .image {
         padding-bottom: 20px;
     }
+.Space {
+    margin: 30px;
 
+}
 }
