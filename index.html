@@ -39,6 +39,7 @@
 
 
 <body>
+   <div class="div"></div>
    <!-- header section start -->
    <div class="header_section">
       <div class="header_main">
@@ -127,7 +128,7 @@
                            style="color: white">SRINAGAR</span></h1>
                      <p class="banner_text">Discover the enchanting beauty of Srinagar. Marvel at the 
                         serene Dal Lake, explore Mughal gardens, and immerse in the rich culture of Kashmir amidst
-                         breathtaking Himalayan vistas."p>
+                         breathtaking Himalayan vistas</p>
                      <div class="read_bt"><a href="https://wa.link/fo6rze">Get In Touch&nbsp; <img
                               src="./images/whatsapp.png" class="whatsapp"></a></div>
                   </div>
@@ -242,11 +243,11 @@
       <div class="container">
          <h1 class="client_taital">Testimonial</h1>
          <div class="client_section_2">
-            <div id="carouselExampleIndicatorsOne" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicatorsone" class="carousel slide" data-ride="carousel">
                <ol class="carousel-indicators" style="bottom:-20px">
-                  <li data-target="#carouselExampleIndicatorsOne" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicatorsOne" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicatorsOne" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicatorsone" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicatorsone" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicatorsone" data-slide-to="2"></li>
                </ol>
                <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -330,9 +331,42 @@
          <div class="newsletter_box">
             <h1 class="let_text">Any <span style="color: #F97300"></span> <span style="color: #F97300">Queries</span>
             </h1>
-            <div class="getquote_bt"><a href="https://wa.link/fo6rze">Get In Touch</a></div>
+            <div class="getquote_bt"
+           data-toggle="modal" data-target="#exampleModal"><button class="getintouch"><a><span style="color: white">Get In Touch</span></a></button></div>
          </div>
       </div>
+      <!-- Button to Open the Modal -->
+
+ 
+ <!-- The Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         <form>
+           <div class="form-group">
+             <label for="recipient-name" class="col-form-label">Name:</label>
+             <input type="text" class="form-control" id="recipient-name">
+           </div>
+           <div class="form-group">
+             <label for="message-text" class="col-form-label">Contact:</label>
+             <textarea class="form-control" id="message-text"></textarea>
+           </div>
+         </form>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         <button type="button" class="btn btn-primary"><a href="mailto:vactionplannersindia@gmail.com"><spam style="color: white">Send Message</spam></a></button>
+       </div>
+     </div>
+   </div>
+ </div>
    </div>
    <!-- choose section end -->
    <!-- footer section start -->
@@ -345,7 +379,7 @@
             <div class="call_text">+91 9555264441
             </div>
             <div class="call_text"><img src="images/mail-icon.png"></div>
-            <div class="call_text">sm.vpikmr@gmail.com</div>
+            <div class="call_text">info@vacation planners.in</div>
             <p class="adress"><span style="font-weight: bold">Head Office:</span> 3rd Floor, Rather Complex,
                Munawarabad, M.A Link Road, Srinagar J&K-190001</p>
             <p class="dmc"><span style="font-weight: bold">DMC:</span> South India, Ladakh & Kashmir</p>

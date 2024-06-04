@@ -150,7 +150,11 @@ a {
     text-decoration: none;
     outline: none !important;
 }
-
+/* .getintouch{ */
+    /* color: white; */
+    /* text-decoration: none; */
+    /* outline: none !important */
+/* } */
 a,
 .btn {
     text-decoration: none !important;
@@ -475,7 +479,9 @@ button {
         font-size: 28px;
 
     }
-
+.div {
+    overflow: hidden;
+}
 
 }
 
@@ -888,15 +894,14 @@ button {
 
 .getquote_bt {
     width: 200px;
-    padding-top: 6px;
 }
 
 .getquote_bt a {
-    width: 100%;
+    width: 120%;
     float: left;
     font-size: 16px;
     color: #ffffff;
-    background-color: #000d10;
+    background-color: black;
     text-align: center;
     padding: 10px 0px;
     border-radius: 30px;
@@ -905,7 +910,7 @@ button {
 
 .getquote_bt a:hover {
     background-color: #F97300;
-    color: #ffffff;
+    color: white;
 }
 
 
