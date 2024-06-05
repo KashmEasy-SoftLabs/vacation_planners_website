@@ -874,10 +874,19 @@ button {
     color: #ffffff;
 }
 
+.top_news_letter_box{
+    width: 70%;
+    border: 1px solid #6e6e6e;
+    border-radius: 60px;
+    padding: 20px 30px;
+    display: flex;
+    margin: 10px 10px 50px 230px;
+}
+
 .newsletter_box {
     width: 100%;
     border: 1px solid #6e6e6e;
-    border-radius: 25px;
+    border-radius: 60px;
     padding: 20px 30px;
     display: flex;
     margin-top: 90px !important;
