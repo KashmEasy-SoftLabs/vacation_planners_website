@@ -257,7 +257,7 @@ button {
         padding:30px 0;
     }
     #header-section{
-        padding:30px 0;
+        padding: 40px 0;
     }
 .mobile_menu {
     width: 100%;
@@ -265,6 +265,10 @@ button {
     position: absolute;
     background:#122c2d;
     z-index:111;
+}
+.text-white {
+    margin-left: 100px;
+    font-size: 20px;
 }
 
 }
@@ -380,13 +384,14 @@ button {
 }
 
 .text-white {
-    font-family: "Danfo", serif;
+    font-family: "Dancing Script", cursive;
 }
 
 /* header section end */
 
 
 /* banner section start */
+
 .banner_section {
     width: 100%;
     float: left;
@@ -442,6 +447,7 @@ button {
     color: white;
 }
 
+
 /* banner section end */
 
 
@@ -470,6 +476,14 @@ button {
     font-size: 40px;
     color: #1f1f1f;
     margin: 0px;
+}
+.top_newsletter_box {
+    width: 78%;
+    border: 1px solid #6e6e6e;
+    border-radius: 60px;
+    padding: 20px 30px;
+    display: flex;
+    margin: 10px 10px 50px 190px;
 }
 
 /*mobile screen*/
@@ -877,7 +891,7 @@ button {
 .newsletter_box {
     width: 100%;
     border: 1px solid #6e6e6e;
-    border-radius: 25px;
+    border-radius: 60px;
     padding: 20px 30px;
     display: flex;
     margin-top: 90px !important;
@@ -894,6 +908,8 @@ button {
 
 .getquote_bt {
     width: 200px;
+    margin-left: 200px;
+    padding-top: 10px;
 }
 
 .getquote_bt a {
@@ -904,7 +920,7 @@ button {
     background-color: black;
     text-align: center;
     padding: 10px 0px;
-    border-radius: 30px;
+    border-radius: 60px;
     font-weight: bold;
 }
 
