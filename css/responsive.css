@@ -714,7 +714,11 @@
     }
 
     .blog_section {
-        background-image: url(../images/Gulmarg.jpg2.avif);
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.4)),
+            url(../images/pahalgam-image.jpg);
+        /* background-image: url(../images/Gulmarg.jpg2.avif); */
         background-size: cover;
         padding: 0px;
         width: 100%;
