@@ -150,6 +150,7 @@ a {
     text-decoration: none;
     outline: none !important;
 }
+
 a,
 .btn {
     text-decoration: none !important;
@@ -249,22 +250,25 @@ button {
 @media only screen and (max-width: 600px) {
     .header_section {
         height: auto;
-        padding:30px 0;
+        padding: 30px 0;
     }
-    #header-section{
+
+    #header-section {
         padding: 40px 0;
     }
-.mobile_menu {
-    width: 100%;
-    float: left;
-    position: absolute;
-    background:#122c2d;
-    z-index:111;
-}
-.text-white {
-    margin-left: 100px;
-    font-size: 20px;
-}
+
+    .mobile_menu {
+        width: 100%;
+        float: left;
+        position: absolute;
+        background: #122c2d;
+        z-index: 111;
+    }
+
+    .text-white {
+        margin-left: 100px;
+        font-size: 20px;
+    }
 
 }
 
@@ -447,29 +451,35 @@ button {
 
 
 /* services section start */
-.card{
-    margin-left: 5px;
-    margin-right: 10px;
+.card {
+    height: auto;
+    /* margin-left: 5px;
+    margin-right: 10px; */
 }
+
 .card-title {
     color: #000d10;
     font-size: 25px;
+    padding: 0px;
     text-align: center;
 }
 
 .card-img-top {
+    padding-top: 10px;
     /* width: 100%; */
-    height: 30%;
-   
-   padding-top: 10px;
-   
+    height: 40%;
+
+
+
 }
-.card-body{
+
+.card-body {
     margin: 0px;
 }
+
 .card-text {
-  
-   text-align: left;
+
+    text-align: left;
     /* font-size: 15px;
     color: grey;
     margin: auto; */
@@ -477,11 +487,13 @@ button {
 
 
 
+
+
 .services_section {
     width: 100%;
-    float: left;
+    /* float: left; */
     padding-bottom: 90px;
-    padding-left: 100px;
+    padding-left: 50px;
     padding-right: 50px;
 }
 
@@ -493,6 +505,7 @@ button {
     font-weight: bold;
 
 }
+
 .services_text {
     font-size: 30px;
     margin: auto;
@@ -516,9 +529,10 @@ button {
     }
 
 }
+
 .services_section_2 {
     width: 100%;
-    float: left;
+    /* float: left; */
     margin-top: 90px;
 
 }
@@ -542,6 +556,7 @@ button {
         margin-top: 0px;
     }
 }
+
 .btn-primary {
     width: 150px;
     font-size: 14px;
@@ -585,7 +600,9 @@ button {
 }
 
 .padding_right_0 {
-    padding-right: 0px;
+    /* padding: 30px; */
+
+    padding-top: 50px;
 }
 
 .about_taital {
@@ -649,8 +666,8 @@ button {
     background:
         linear-gradient(rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.4)),
-        url(../images/Gulmarg.jpg2.avif);
-    background-image: url(../images/Gulmarg.jpg2.avif);
+        url(../images/pahalgam-image.jpg);
+    /* background-image: url(../images/Gulmarg.jpg2.avif); */
     height: auto;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -852,7 +869,7 @@ button {
 .choose_section {
     width: 100%;
     float: left;
-    padding-bottom: 90px;
+
 }
 
 .choose_taital {
@@ -897,7 +914,7 @@ button {
     color: #ffffff;
 }
 
-.top_news_letter_box{
+.top_news_letter_box {
     width: 80%;
     border: 1px solid #6e6e6e;
     border-radius: 60px;
@@ -907,13 +924,13 @@ button {
 }
 
 /* .newsletter_box { */
-    /* width: 100%; */
-    /* border: 1px solid #6e6e6e; */
-    /* border-radius: 60px; */
-    /* padding: 20px 30px; */
-    /* display: flex; */
-    /* margin-top: 90px !important; */
-    /* float: left; */
+/* width: 100%; */
+/* border: 1px solid #6e6e6e; */
+/* border-radius: 60px; */
+/* padding: 20px 30px; */
+/* display: flex; */
+/* margin-top: 90px !important; */
+/* float: left; */
 /* } */
 
 .let_text {
@@ -1171,8 +1188,9 @@ button {
     .image {
         padding-bottom: 20px;
     }
-.Space {
-    margin: 30px;
 
-}
+    .Space {
+        margin: 30px;
+
+    }
 }
