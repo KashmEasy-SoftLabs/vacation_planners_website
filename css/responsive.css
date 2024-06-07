@@ -349,7 +349,7 @@
         padding: 50px 0px;
     }
     .services_section {
-        padding: 50px 0px;
+        /* padding: 50px 0px; */
     }
     .services_section_2 {
         margin-top: 30px;
@@ -423,10 +423,11 @@
     .newsletter_box {
         display: initial;
     }
-    .let_text {
-        font-size: 30px;
-        text-align: center;
-    }
+    /* .let_text { */
+        /* font-size: 30px; */
+        /* text-align: center; */
+
+    /* } */
     .getquote_bt {
         margin: 0 auto;
     }
@@ -572,9 +573,11 @@
         padding-right: 15px;
     }
     .blog_section {
-        background-image: url(../images/blog-mobile-bg.png);
+        background-image: url(../images/Gulmarg.jpg2.avif);
         background-size: cover;
-        padding: 50px 0px;
+        padding: 0px;
+        width: 100%;
+        margin: 0%;
     }
     .blog_text {
         width: 100%;
