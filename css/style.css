@@ -1142,6 +1142,16 @@ button {
 .call_text a:hover {
     color: #e27141;
 }
+#map_canvas {
+    width: 60%;
+    height: 400px;
+    border: 1px solid black;
+    float: left;
+}
+
+body {
+    font-size: 12px;
+}
 
 
 /* footer section end */
