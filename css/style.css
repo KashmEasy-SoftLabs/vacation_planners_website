@@ -284,9 +284,9 @@ button {
 }
 
 .logo_mobile {
-    width: 100%;
+    width: 50%;
     float: left;
-    text-align: center;
+    text-align: left;
     padding-bottom: 20px;
 }
 

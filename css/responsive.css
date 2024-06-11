@@ -363,7 +363,7 @@
     }
 
     .navbar-toggler {
-        background-color: #ffffff;
+        background-color: transparent;
     }
 
     .logo {
@@ -616,6 +616,8 @@
         background-color: #ffffff;
     }
 
+
+
     .logo {
         display: none;
     }
@@ -625,8 +627,13 @@
     }
 
     .logo_mobile {
-        width: 40%;
+        margin: 0 auto;
+        width: 100%;
         padding: 0px;
+    }
+
+    .title {
+        text-align: left;
     }
 
     .mobile_menu {
