@@ -455,6 +455,7 @@ button {
 .cab-name {
     color: #000d10;
 }
+
 .card {
     height: auto;
     /* margin-left: 5px;
@@ -484,7 +485,7 @@ button {
 .card-text {
 
     text-align: left;
-     font-size: 15px;
+    font-size: 15px;
     color: grey;
     margin: auto;
     padding-bottom: 25px;
@@ -1142,12 +1143,14 @@ button {
 .call_text a:hover {
     color: #e27141;
 }
+
 #map_canvas {
     width: 60%;
     height: 400px;
     border: 1px solid black;
     float: left;
 }
+
 #footer-button {
     width: 200px;
     background-color: white;
@@ -1209,4 +1212,3 @@ body {
 
     }
 }
-
