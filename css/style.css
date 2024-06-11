@@ -451,6 +451,10 @@ button {
 
 
 /* services section start */
+/*Cabs Rental Start Here*/
+.cab-name {
+    color: #000d10;
+}
 .card {
     height: auto;
     /* margin-left: 5px;
@@ -461,7 +465,7 @@ button {
     color: #000d10;
     font-size: 25px;
     padding: 0px;
-    text-align: center;
+    text-align: left;
 }
 
 .card-img-top {
@@ -480,14 +484,11 @@ button {
 .card-text {
 
     text-align: left;
-    /* font-size: 15px;
+     font-size: 15px;
     color: grey;
-    margin: auto; */
+    margin: auto;
+    padding-bottom: 25px;
 }
-
-
-
-
 
 .services_section {
     width: 100%;
