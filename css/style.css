@@ -582,7 +582,6 @@ button {
 
 /* services section end */
 
-
 /* about section start */
 
 .about_section {
@@ -615,7 +614,7 @@ button {
     width: 100%;
     float: left;
     font-size: 19px;
-    color: #1f1f1f;
+    color: black;
     margin: 0px;
     padding-top: 20px;
     padding-right: px;
