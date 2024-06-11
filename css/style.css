@@ -451,6 +451,10 @@ button {
 
 
 /* services section start */
+/*Cabs Rental Start Here*/
+.cab-name {
+    color: #000d10;
+}
 .card {
     height: auto;
     /* margin-left: 5px;
@@ -461,7 +465,7 @@ button {
     color: #000d10;
     font-size: 25px;
     padding: 0px;
-    text-align: center;
+    text-align: left;
 }
 
 .card-img-top {
@@ -480,14 +484,11 @@ button {
 .card-text {
 
     text-align: left;
-    /* font-size: 15px;
+     font-size: 15px;
     color: grey;
-    margin: auto; */
+    margin: auto;
+    padding-bottom: 25px;
 }
-
-
-
-
 
 .services_section {
     width: 100%;
@@ -582,7 +583,6 @@ button {
 
 /* services section end */
 
-
 /* about section start */
 
 .about_section {
@@ -615,7 +615,7 @@ button {
     width: 100%;
     float: left;
     font-size: 19px;
-    color: #1f1f1f;
+    color: black;
     margin: 0px;
     padding-top: 20px;
     padding-right: px;
@@ -1142,6 +1142,22 @@ button {
 .call_text a:hover {
     color: #e27141;
 }
+#map_canvas {
+    width: 60%;
+    height: 400px;
+    border: 1px solid black;
+    float: left;
+}
+#footer-button {
+    width: 200px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+body {
+    font-size: 16px;
+}
 
 
 /* footer section end */
@@ -1175,6 +1191,7 @@ button {
     margin-left: auto;
     margin-right: auto;
     width: 30%;
+    padding-top: 25px;
 }
 
 /*mobile screen*/
@@ -1192,3 +1209,4 @@ button {
 
     }
 }
+

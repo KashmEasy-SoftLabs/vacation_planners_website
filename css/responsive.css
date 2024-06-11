@@ -433,7 +433,9 @@
     }
 
     .services_section {
-        /* padding: 50px 0px; */
+        padding: 50px 0px;
+        /* text-align: left; */
+        /* justify-content: flex-start; */
     }
 
     .services_section_2 {
