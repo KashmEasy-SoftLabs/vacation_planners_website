@@ -233,6 +233,9 @@ button {
 
 
 /* header section start */
+.Book-Now {
+    background-color: black;
+}
 
 .header_section {
     width: 100%;
