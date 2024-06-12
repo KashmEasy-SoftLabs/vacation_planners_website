@@ -606,38 +606,39 @@
                </button>
             </div>
             <div class="modal-body">
-               <form>
+               <form id="emailForm">
                   <div class="form-group">
                      <label for="recipient-name" class="col-form-label">Name:</label>
-                     <input type="text" class="form-control" id="recipient-name">
+                     <input type="text" class="form-control" id="recipient-name" required>
                   </div>
                   <div class="form-group">
                      <label for="no-of-guests" class="col-form-label">No of guests:</label>
-                     <input type="number" class="form-control" id="guests" required="true">
+                     <input type="number" class="form-control" id="guests" required>
                   </div>
                   <div class="form-group">
                      <label for="starting-day" class="col-form-label">From:</label>
-                     <input type="date" class="form-control" id="starting-day" required="true">
+                     <input type="date" class="form-control" id="starting-day" require>
                   </div>
                   <div class="form-group">
-                     <label for="ending-day" class="col-form-label">From:</label>
-                     <input type="date" class="form-control" id="ending-day" required="true">
+                     <label for="ending-day" class="col-form-label">To:</label>
+                     <input type="date" class="form-control" id="ending-day" required>
                   </div>
                   <div class="form-group">
                      <label for="message-text" class="col-form-label">Contact:</label>
-                     <textarea class="form-control" id="message-text"></textarea>
+                     <input type="number" class="form-control" id="contact-text" required>
                   </div>
                   <div class="form-group">
                      <label for="message-text" class="col-form-label">Email ID:</label>
-                     <textarea class="form-control" id="message-text"></textarea>
+                     <input type="email" class="form-control" id="email-text" required>
                   </div>
-               </form>
+
             </div>
             <div class="modal-footer">
-               <button type="button" class="btn btn-primary"><a href="mailto:info@vacationplannersindia.in">
+               <button type="submit" class="btn btn-primary"><a href="mailto:info@vacationplannersindia.in">
                      <spam style="color: white">Send Message</spam>
                   </a></button>
             </div>
+            </form>
          </div>
       </div>
    </div>
@@ -825,6 +826,20 @@
       })
       var mapButton = document.getElementById('map');
       google.maps.event.addDomListener(mapButton, 'click', initialize);
+      document.getElementById('emailForm').addEventListener('submit', function (event) {
+         event.preventDefault();
+
+         const name = document.getElementById('recipient-name').value;
+         const email = document.getElementById('email-text').value;
+         const noOfGuests = document.getElementById('guests').value;
+         const from = document.getElementById('from').value;
+         const to = document.getElementById('to').value;
+         const contact = document.getElementById('contact-text').value;
+
+         const mailtoLink = `mailto:info@vacationplannersindia.in?subject=New%20Message%20from%20${name}&body=Name:%20${name}%0AEmail:%20${email}%0AMessage:%20${contact}${guests}${from} ${to}`;
+
+         window.location.href = mailtoLink;
+      });
 
    </script>
 
