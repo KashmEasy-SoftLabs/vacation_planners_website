@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message = "Name : $name\nNumber of Guests : $guestsCount\nContact number : $contact\nEmail : $email\nFrom : $from\nTo : $to"; 
         $subject = "Package Request";
         $mailFrom = "info@vacationplannersindia.in";
-        $mailTo = "aalimaslam@pm.me";
+        $mailTo = "md@vacationplannersindia.com";
     
         $mail = new PHPMailer(true);
         try {

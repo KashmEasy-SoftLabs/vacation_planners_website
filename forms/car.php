@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message = "Name : $name\n wants a $car\ncontact number : $contact\nemail : $email"; 
         $subject = "Car Request";
         $mailFrom = "info@vacationplannersindia.in";
-        $mailTo = "aalimaslam@pm.me";
+        $mailTo = "md@vacationplannersindia.com"; 
     
         $mail = new PHPMailer(true);
         try {
