@@ -274,7 +274,7 @@
                      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">BOOK NOW</a>
                   </div>
                </div>
-               <div class="card col-sm-2 col-md-4">
+               <div class="card col-md-4">
                   <img class="card-img-top" src="./images/dj.jpg" alt="Card image cap">
                   <div class="card-body">
                      <h5 class="card-title">DJS</h5>
@@ -302,7 +302,9 @@
                   style="width: 100%; height: 300px; object-fit: cover;">
                <div class="cab-name fw-bold h4 my-2">Ertiga</div>
                <div class="cab-capacity text-muted h6 mb-2">7 seater (with or with out AC)</div>
-               <button class="btn btn-primary my-2" data-target="#Modal-7" data-toggle="modal">Book</button>
+               <div class="data" data-target="#Modal-2" data-toggle="modal"></div>
+
+               <button class="btn btn-primary my-2">Book</button>
             </div>
             <!--Cards ends here-->
             <!--Cards starts Here-->
@@ -313,7 +315,9 @@
                <div class="cab-name fw-bold h4 my-2">Dzire</div>
                <div class="cab-capacity text-muted h6 mb-2">For Couples
                   (with or with out AC)</div>
-               <button class="btn btn-primary my-2" data-target="#Modal-6" data-toggle="modal">Book</button>
+               <div class="data" data-target="#Modal-2" data-toggle="modal"></div>
+
+               <button class="btn btn-primary my-2">Book</button>
             </div>
             <!--Cards ends here-->
             <!--Cards starts Here-->
@@ -323,7 +327,9 @@
                   style="width: 100%; height: 300px; object-fit: cover;">
                <div class="cab-name fw-bold h4 my-2">Force tempo</div>
                <div class="cab-capacity text-muted h6 mb-2">13, 17, 20, 26 seater(with or with out AC)</div>
-               <button class="btn btn-primary my-2" data-target="#Modal-5" data-toggle="modal">Book</button>
+               <div class="data" data-target="#Modal-2" data-toggle="modal"></div>
+
+               <button class="btn btn-primary my-2">Book</button>
             </div>
             <!--Cards ends here-->
             <!--Cards starts Here-->
@@ -334,7 +340,9 @@
                <div class="cab-name fw-bold h4 my-2">Toyoto Etios</div>
                <div class="cab-capacity text-muted h6 mb-2">For Couples
                   (with or with out AC)</div>
-               <button class="btn btn-primary my-2" data-target="#Modal-4" data-toggle="modal">Book</button>
+               <div class="data" data-target="#Modal-2" data-toggle="modal"></div>
+
+               <button class="btn btn-primary my-2">Book</button>
             </div>
             <!--Cards ends here-->
             <!--Cards starts Here-->
@@ -344,7 +352,9 @@
                   loading="lazy" style="width: 100%; height: 300px; object-fit: cover;">
                <div class="cab-name fw-bold h4 my-2">Innova Crysta</div>
                <div class="cab-capacity text-muted h6 mb-2">7 Seater(with or with out AC)</div>
-               <button class="btn btn-primary my-2" data-target="#Modal-3" data-toggle="modal">Book</button>
+               <div class="data" data-target="#Modal-2" data-toggle="modal"></div>
+
+               <button class="btn btn-primary my-2">Book</button>
             </div>
             <!--Cards ends here-->
             <!--Cards starts Here-->
@@ -354,12 +364,14 @@
                   style="width: 100%; height: 300px; object-fit: cover;">
                <div class="cab-name fw-bold h4 my-2">Innova</div>
                <div class="cab-capacity text-muted h6 mb-2">7 Seater(with or with out AC)</div>
-               <button class="btn btn-primary my-2" data-target="#Modal-2" data-toggle="modal">Book</button>
+               <div class="data" data-target="#Modal-2" data-toggle="modal"></div>
+               <button class="btn btn-primary my-2">Book</button>
             </div>
             <!--Cards ends here-->
          </div>
       </div>
    </div>
+   
    <!-- The Modal 2 -->
    <div class="modal fade" id="Modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
@@ -372,231 +384,35 @@
                </button>
             </div>
             <div class="modal-body">
-               <form>
+               <form action="./forms/car.php" method="post">
                   <div class="form-group">
                      <label for="recipient-name" class="col-form-label">Name:</label>
-                     <input required type="Innova" class="form-control" id="recipient-name">
+                     <input required type="text" name="name" class="form-control" id="recipient-name">
                   </div>
                   <div class="form-group">
-                     <label for="recipient-name" class="col-form-label">Car Name:</label>
-                     <input required type="text" class="form-control" id="recipient-name" value="Innova" readonly>
+                     <label for="car-name" class="col-form-label">Car Name:</label>
+                     <input required type="text" name="car" class="form-control" id="car-name" value="Innova" readonly>
                   </div>
                   <div class="form-group">
                      <label for="message-text" class="col-form-label">Contact:</label>
-                     <textarea class="form-control" id="message-text"></textarea>
+                     <textarea class="form-control" name="contact" id="message-text" required></textarea>
                   </div>
                   <div class="form-group">
                      <label for="message-text" class="col-form-label">Email ID:</label>
-                     <textarea class="form-control" id="message-text"></textarea>
+                     <textarea class="form-control" name="email" id="message-text" required></textarea>
                   </div>
                </form>
             </div>
             <div class="modal-footer">
-               <button type="button" class="btn btn-primary"><a href="mailto:info@vacationplanners.in">
+               <button type="submit" class="btn btn-primary">
                      <span style="color: white">Send Message</span>
-                  </a></button>
+               </button>
             </div>
          </div>
       </div>
    </div>
 
-   <!-- The Modal 3 -->
-   <div class="modal fade" id="Modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-               </button>
-            </div>
-            <div class="modal-body">
-               <form>
-                  <div class="form-group">
-                     <label for="recipient-name" class="col-form-label">Name:</label>
-                     <input required type="Innova" class="form-control" id="recipient-name">
-                  </div>
-                  <div class="form-group">
-                     <label for="recipient-name" class="col-form-label">Car Name:</label>
-                     <input required type="text" class="form-control" id="recipient-name" value="Innova Crysta" readonly>
-                  </div>
-                  <div class="form-group">
-                     <label for="message-text" class="col-form-label">Contact:</label>
-                     <textarea required class="form-control" id="message-text"></textarea>
-                  </div>
-                  <div class="form-group">
-                     <label for="message-text" class="col-form-label">Email ID:</label>
-                     <textarea required class="form-control" id="message-text"></textarea>
-                  </div>
-               </form>
-            </div>
-            <div class="modal-footer">
-               <button type="button" class="btn btn-primary"><a href="mailto:info@vacationplanners.in">
-                     <span style="color: white">Send Message</span>
-                  </a></button>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- The Modal 4-->
-   <div class="modal fade" id="Modal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-               </button>
-            </div>
-            <div class="modal-body">
-               <form>
-                  <div class="form-group">
-                     <label for="recipient-name" class="col-form-label">Name:</label>
-                     <input required type="Innova" class="form-control" id="recipient-name">
-                  </div>
-                  <div class="form-group">
-                     <label for="recipient-name" class="col-form-label">Car Name:</label>
-                     <input required type="text" class="form-control" id="recipient-name" value="Toyota-Etios" readonly>
-                  </div>
-                  <div class="form-group">
-                     <label for="message-text" class="col-form-label">Contact:</label>
-                     <textarea required class="form-control" id="message-text"></textarea>
-                  </div>
-                  <div class="form-group">
-                     <label for="message-text" class="col-form-label">Email ID:</label>
-                     <textarea required class="form-control" id="message-text"></textarea>
-                  </div>
-               </form>
-            </div>
-            <div class="modal-footer">
-               <button type="button" class="btn btn-primary"><a href="mailto:info@vacationplanners.in">
-                     <span style="color: white">Send Message</span>
-                  </a></button>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- The Modal 5-->
-   <div class="modal fade" id="Modal-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-               </button>
-            </div>
-            <div class="modal-body">
-               <form>
-                  <div class="form-group">
-                     <label for="recipient-name" class="col-form-label">Name:</label>
-                     <input required type="Text" class="form-control" id="recipient-name">
-                  </div>
-                  <div class="form-group">
-                     <label for="recipient-name" class="col-form-label">Car Name:</label>
-                     <input required type="text" class="form-control" id="recipient-name" value="Force Tempo" readonly>
-                  </div>
-                  <div class="form-group">
-                     <label for="message-text" class="col-form-label">Contact:</label>
-                     <textarea required class="form-control" id="message-text"></textarea>
-                  </div>
-                  <div class="form-group">
-                     <label for="message-text" class="col-form-label">Email ID:</label>
-                     <textarea required class="form-control" id="message-text"></textarea>
-                  </div>
-               </form>
-            </div>
-            <div class="modal-footer">
-               <button type="button" class="btn btn-primary"><a href="mailto:info@vacationplanners.in">
-                     <span style="color: white">Send Message</span>
-                  </a></button>
-            </div>
-         </div>
-      </div>
-   </div>
 
-   <!-- The Modal 6-->
-   <div class="modal fade" id="Modal-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-               </button>
-            </div>
-            <div class="modal-body">
-               <form>
-                  <div class="form-group">
-                     <label for="recipient-name" class="col-form-label">Name:</label>
-                     <input required type="text" class="form-control" id="recipient-name">
-                  </div>
-                  <div class="form-group">
-                     <label for="recipient-name" class="col-form-label">Car Name:</label>
-                     <input required type="text" class="form-control" id="recipient-name" value="Swift Dzire" readonly>
-                  </div>
-
-                  <div class="form-group">
-                     <label for="message-text" class="col-form-label">Contact:</label>
-                     <textarea required class="form-control" id="message-text"></textarea>
-                  </div>
-                  <div class="form-group">
-                     <label for="message-text" class="col-form-label">Email ID:</label>
-                     <textarea required class="form-control" id="message-text"></textarea>
-                  </div>
-               </form>
-            </div>
-            <div class="modal-footer">
-               <button type="submit" class="btn btn-primary"><a href="mailto:info@vacationplanners.in">
-                     <span style="color: white">Send Message</span>
-                  </a></button>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- The Modal 7-->
-   <div class="modal fade" id="Modal-7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-               </button>
-            </div>
-            <div class="modal-body">
-               <form>
-                  <div class="form-group">
-                     <label for="recipient-name" class="col-form-label">Name:</label>
-                     <input required type="text" class="form-control" id="recipient-name">
-                  </div>
-                  <div class="form-group">
-                     <label for="recipient-name" class="col-form-label">Car Name:</label>
-                     <input required type="text" class="form-control" id="recipient-name" value="Ertiga" readonly>
-                  </div>
-                  <div class="form-group">
-                     <label for="message-text" class="col-form-label">Contact:</label>
-                     <textarea required class="form-control" id="message-text"></textarea>
-                  </div>
-                  <div class="form-group">
-                     <label for="message-text" class="col-form-label">Email ID:</label>
-                     <textarea required class="form-control" id="message-text"></textarea>
-                  </div>
-               </form>
-            </div>
-            <div class="modal-footer">
-               <button type="button" class="btn btn-primary"><a href="mailto:info@vacationplanners.in">
-                     <span style="color: white">Send Message</span>
-                  </a></button>
-            </div>
-         </div>
-      </div>
-   </div>
    <!-- The Modal -->
    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
@@ -609,37 +425,36 @@
                </button>
             </div>
             <div class="modal-body">
-               <form id="emailForm">
+               <form id="emailForm" action="./forms/packages.php" method="post">
                   <div class="form-group">
                      <label for="recipient-name" class="col-form-label">Name:</label>
-                     <input required type="text" class="form-control" id="recipient-name" required>
+                     <input required type="text" class="form-control" id="recipient-name" name="name" required>
                   </div>
                   <div class="form-group">
                      <label for="no-of-guests" class="col-form-label">No of guests:</label>
-                     <input required type="number" class="form-control" id="guests" required>
+                     <input required type="number" class="form-control" id="guests" name="guests-count" required>
                   </div>
                   <div class="form-group">
                      <label for="starting-day" class="col-form-label">From:</label>
-                     <input required type="date" class="form-control" id="starting-day" require>
+                     <input required type="date" class="form-control" id="starting-day" name="from" require>
                   </div>
                   <div class="form-group">
                      <label for="ending-day" class="col-form-label">To:</label>
-                     <input required type="date" class="form-control" id="ending-day" required>
+                     <input required type="date" class="form-control" id="ending-day" name="to" required>
                   </div>
                   <div class="form-group">
                      <label for="message-text" class="col-form-label">Contact:</label>
-                     <input required type="number" class="form-control" id="contact-text" required>
+                     <input required type="number" class="form-control" id="contact-text" name="contact" required>
                   </div>
                   <div class="form-group">
                      <label for="message-text" class="col-form-label">Email ID:</label>
-                     <input required type="email" class="form-control" id="email-text" required>
+                     <input required type="email" class="form-control" id="email-text" name="email" required>
                   </div>
 
             </div>
             <div class="modal-footer">
-               <button type="button" class="btn btn-primary"><a href="mailto:info@vacationplannersindia.in">
-                     <span style="color: white">Send Message</span>
-                  </a></button>
+               <button type="submit" class="btn btn-primary">
+                     <span style="color: white">Send Message</span></button>
             </div>
             </form>
          </div>
@@ -819,7 +634,14 @@
    <script>
       $(window).on('load', function () {
          $('#exampleModal').modal('show');
+         document.querySelectorAll("#cab-rentals button").forEach(item=>{
+         item.onclick = function(e){
+            document.getElementById("Modal-2").classList.add("show");
+            document.querySelector("div[data-target='#Modal-2']").click();
+            document.getElementById("car-name").value = e.target.parentElement.querySelector(".cab-name").innerText;
+         }
       });
+   })
       function toggleNavbar() {
          document.getElementById("navbarNav").classList.toggle("show");
          document.querySelector(".navbar-toggler").classList.toggle("collapsed")
@@ -843,6 +665,8 @@
 
          window.location.href = mailtoLink;
       });
+
+      
 
    </script>
 
