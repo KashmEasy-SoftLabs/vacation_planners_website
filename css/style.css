@@ -233,9 +233,7 @@ button {
 
 
 /* header section start */
-.Book-Now {
-    background-color: black;
-}
+
 
 .header_section {
     width: 100%;
@@ -366,10 +364,9 @@ button {
 }
 
 .menu_main li a:hover {
-    color: #ffffff;
-    background-color: #F97300;
+    color: #F97300;
+    /* background-color: #F97300; */
 }
-
 .mb-lg-0,
 .my-lg-0 {
     margin-bottom: 0 !important;
@@ -392,7 +389,6 @@ button {
 
 
 /* banner section start */
-
 .banner_section {
     width: 100%;
     float: left;
@@ -439,7 +435,7 @@ button {
     text-align: center;
     padding: 10px 0px;
     border-radius: 30px;
-    margin-top: 50px;
+    margin-top: 250px;
     font-weight: 400;
 }
 
@@ -447,7 +443,13 @@ button {
     background-color: #F97300;
     color: white;
 }
-
+.book-now{
+    background:black;
+}
+.book-now:hover{
+    background-color: #F97300;
+    color:black !important;
+}
 
 /* banner section end */
 
@@ -514,6 +516,14 @@ button {
     font-size: 30px;
     margin: auto;
 }
+.col-md-4 a:hover {
+    color: white;
+    background-color: #F97300;
+}
+.col-12 :hover {
+    color: white;
+    background-color: #F97300;
+}
 
 
 
@@ -573,12 +583,12 @@ button {
 
 
 
-.btn-primary :hover {
-    color: #ffffff;
-    background-color: #F97300;
+.btn-primary a:hover {
+    color: #e27141;
+    background-color: #ffffff;
 }
 
-.btn-primary :active {
+.btn-primary a:active {
     color: #ffffff;
     background-color: #0C0C0C;
 }
@@ -998,7 +1008,7 @@ button {
     margin-bottom: 20px;
     padding: 10px 15px;
     border: 0px;
-    border: 1px solid #2b2278 !important;
+    /* border: 1px solid #2b2278 !important; */
 }
 
 .massage-bt {
@@ -1009,7 +1019,7 @@ button {
     margin-bottom: 20px;
     padding: 10px 15px;
     border: 0px;
-    border: 1px solid #2b2278 !important;
+    /* border: 1px solid #2b2278 !important; */
 }
 
 .send_btn {
@@ -1031,7 +1041,7 @@ button {
 
 .send_btn a:hover {
     color: #ffffff;
-    background-color: #2b2278;
+    /* background-color: #2b2278; */
 }
 
 /* contact section end */
@@ -1163,7 +1173,10 @@ button {
 body {
     font-size: 16px;
 }
-
+.btn-primary a:hover {
+    color: white;
+    background-color: #F97300;
+}
 
 /* footer section end */
 
@@ -1197,6 +1210,10 @@ body {
     margin-right: auto;
     width: 30%;
     padding-top: 25px;
+}
+.btn :hover{
+    color: white;
+    background-color: #F97300;
 }
 
 /*mobile screen*/
