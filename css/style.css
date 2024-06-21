@@ -421,12 +421,26 @@ button {
 }
 
 .read_bt {
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+}
+.read_bt a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 200px;
-    margin: 0 auto;
+    font-size: 16px;
+    color: #FFF7FC;
+    background-color: #0C0C0C;
     text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: 400;
+    text-decoration: none;
 }
 
-.read_bt a {
+/* .read_bt a {
     width: 100%;
     float: left;
     font-size: 16px;
@@ -437,7 +451,7 @@ button {
     border-radius: 30px;
     margin-top: 250px;
     font-weight: 400;
-}
+} */
 
 .read_bt a:hover {
     background-color: #F97300;
@@ -661,6 +675,7 @@ button {
 .about_img {
     width: 100%;
     float: left;
+    padding-top:70px;
 }
 
 
@@ -677,13 +692,13 @@ button {
     background:
         linear-gradient(rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0.4)),
-        url(../images/pahalgam-image.jpg);
+        url(../images/pahalgam-image1.webp);
     /* background-image: url(../images/Gulmarg.jpg2.avif); */
     height: auto;
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-bottom: 150px;
-    padding-top: 150px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     margin: 0%;
 }
 
@@ -1131,6 +1146,11 @@ button {
 .social_icon li {
     float: left;
     padding: 30px 5px;
+    font-size: 25px; 
+   transition: color 0.3s ease;
+}
+.social_icon ul li a i:hover {
+    color:  #F97300;
 }
 
 .location_main {
