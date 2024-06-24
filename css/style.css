@@ -39,6 +39,7 @@
     transition: ease all 0.5s;
     padding: 0px;
     margin: 0px;
+    /* border:1px solid red; */
 }
 
 html {
@@ -423,7 +424,7 @@ button {
 .read_bt {
     display: flex;
     justify-content: center;
-    margin-top: 110px;
+    margin-top: 50px;
 }
 .read_bt a {
     display: flex;
@@ -470,14 +471,21 @@ button {
 
 /* services section start */
 /*Cabs Rental Start Here*/
+
+
+
 .cab-name {
     color: #000d10;
+
 }
+
+
 
 .card {
     height: auto;
     /* margin-left: 5px;
     margin-right: 10px; */
+    background-color: white;
 }
 
 .card-title {
@@ -497,7 +505,9 @@ button {
 }
 
 .card-body {
-    margin: 0px;
+   
+   background-color: white;
+    
 }
 
 .card-text {
@@ -523,13 +533,21 @@ button {
     font-size: 60px;
     color: #1f1f1f;
     font-weight: bold;
+    padding-right: 10%;
+    
 
 }
+
+
 
 .services_text {
     font-size: 30px;
-    margin: auto;
+    /* margin: auto; */
+    /* margin-right: 10px; */
+    
 }
+
+
 .col-md-4 a:hover {
     color: white;
     background-color: #F97300;
@@ -616,26 +634,28 @@ button {
     width: 100%;
     float: left;
     padding-bottom: 90px;
-    padding-right: 70px;
+    padding-right: 20px;
 }
 
 .about_taital_main {
     width: 100%;
-    padding-left: 100px;
+    padding-left: 20px;
+    
 }
 
 .padding_right_0 {
     /* padding: 30px; */
 
-    padding-top: 50px;
+    padding-top: 15px;
 }
 
 .about_taital {
     width: 100%;
-    float: left;
+    float: right;
     font-size: 40px;
     color: #1f1f1f;
     font-weight: bold;
+    margin-left: 15px;
 }
 
 .about_text {
@@ -1132,20 +1152,21 @@ button {
 
 .social_icon {
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: center;
+    
 }
 
 .social_icon ul {
-    margin: 0px;
-    padding: 0px;
-    display: inline-block;
+    margin: 0;
+    padding: 0px 0px;
+    display: inline-flex;
     text-align: center;
 }
 
 .social_icon li {
     float: left;
-    padding: 30px 5px;
+    /* padding: 3px 2px; */
     font-size: 25px; 
    transition: color 0.3s ease;
 }
@@ -1250,4 +1271,21 @@ body {
         margin: 30px;
 
     }
+    .services_section .card{
+        margin:10px;
+    }
+    #cab-rentals .row{
+        margin:10px !important;
+    }
+    #cab-rentals .aos-animate{
+        margin:10px 0;
+    }
+
+    #cab-rentals .aos-animate img{
+        object-fit: cover;
+    }
+}
+.services_section .card{
+    /* margin:0 2px; */
+    box-shadow: 5px 5px 25px rgba(0,0,0,0.3);
 }
