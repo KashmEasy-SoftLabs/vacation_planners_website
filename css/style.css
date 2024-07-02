@@ -527,8 +527,8 @@ button {
     width: 100%;
     /* float: left; */
     padding-bottom: 90px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .services_section .card .card-img-top{
     height:300px !important;
@@ -564,6 +564,10 @@ button {
 #cab-rentals .aos-animate button:hover {
     /* color: white; */
     background-color: #F97300;
+}
+
+#cab-rentals .p-4{
+    padding: 7px;
 }
 
 
@@ -1289,11 +1293,11 @@ body {
     .services_section .card{
         margin:10px;
     }
-    #cab-rentals .row{
+    /* #cab-rentals .row{
         margin:10px !important;
       
        
-    }
+    } */
     #cab-rentals .aos-animate{
         margin:10px 0;
         
@@ -1320,4 +1324,13 @@ body {
 
 .fa:hover{
     color: #e27141;
+}
+
+#service .container-fluid{
+    padding: 2rem;
+}
+
+
+#service .card{
+    padding:10px !important;
 }
