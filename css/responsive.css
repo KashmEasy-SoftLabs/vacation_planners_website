@@ -465,7 +465,7 @@
     }
 
     .blog_section {
-        background-image: url(../images/blog-mobile-bg.png);
+        background-image: url(../images/blog-mobile-bg.webp);
         background-size: cover;
         padding: 50px 0px;
     }

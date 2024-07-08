@@ -242,7 +242,7 @@ button {
     background:
         linear-gradient(rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0.4)),
-        url(../images/pexels-photo-2907578.jpeg);
+        url(../images/pexels-photo-2907578.webp);
     height: 100vh;
     background-size: 100%;
     padding: 0px 0px 20px 0px;
@@ -1101,7 +1101,7 @@ button {
 .footer_section {
     width: 100%;
     float: left;
-    background-image: url(../images/footer-bg.png);
+    background-image: url(../images/footer-bg.webp);
     height: auto;
     padding-top: 250px;
     background-size: 100% 100%;
