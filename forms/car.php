@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Host = 'mail.vacationplannersindia.in';
             $mail->SMTPAuth = true; // enable SMTP authentication
             $mail->Username = $mailFrom;
-            $mail->Password = 'ASLtigaRYdpc42T'; // make sure to use environment variables for sensitive data
+            $mail->Password = 'DtS359{yuOKV'; // make sure to use environment variables for sensitive data
             $mail->SMTPSecure = 'ssl'; 
             $mail->Port = 465;
 

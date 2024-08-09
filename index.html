@@ -29,10 +29,10 @@
    <!-- fonts -->
    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap" rel="stylesheet">
    <!-- owl stylesheets -->
-      <!-- Fontawsom link -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <!-- Fontawsom link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  
+   <link rel="stylesheet" href="css/card.css">
    <link rel="stylesheet" href="css/owl.carousel.min.css">
    <link rel="stylesheet" href="css/owl.theme.default.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
@@ -41,6 +41,68 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Seymour+One&display=swap"
       rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+      <style>
+        #video-container {
+            position: relative;
+            width: 600px;
+            margin: auto;
+        }
+
+        #myVideo {
+            width: 100%;
+            display: block;
+        }
+
+        /* Custom controls */
+        .video-controls {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+        }
+
+        #video-container:hover .video-controls {
+            display: block;
+        }
+        @media only screen and (max-width: 600px) {
+         #video-container{
+            width: 300px;
+         }
+        }
+        .control-image {
+            cursor: pointer;
+            width: 60px; /* Adjust size as needed */
+            height: 60px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .play-button {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .remove-icon{
+         display: none;
+        }
+        .add-icon{
+         display: block;
+        }
+        .pause-button{
+         display: none;
+        }
+
+        .pause-button:hover{
+         display: block;
+        }
+      
+      </style>
 </head>
 
 
@@ -49,6 +111,7 @@
    <!-- header section start -->
    <div class="header_section">
       <div class="header_main">
+         <img src="images/logo.png" class="logo-image" alt="">
          <div class="mobile_menu">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                <div class="title"><a href="#" class="text-white">Vacation Planners India</a></div>
@@ -76,7 +139,7 @@
                      <li class="nav-item">
                         <a class="nav-link" href="#Book-Now" data-toggle="modal" data-target="#exampleModal"
                            class="Book-Now">Book Now</a>
-                        </li>
+                     </li>
                   </ul>
                </div>
             </nav>
@@ -94,7 +157,8 @@
                   <li><a href="#services">Services</a></li>
                   <li><a href="#testimonial">Testimonial</a></li>
                   <li><a href="#contact">Contact us</a></li>
-                  <li><a href="#Book-Now " class="book-now" data-toggle="modal" data-target="#exampleModal" class="Book-Now">BOOK NOW</a>
+                  <li><a href="#Book-Now " class="book-now" data-toggle="modal" data-target="#exampleModal"
+                        class="Book-Now">BOOK NOW</a>
                   </li>
                </ul>
             </div>
@@ -136,15 +200,15 @@
                      <p class="banner_text">Discover the enchanting beauty of Srinagar. Marvel at the
                         serene Dal Lake, explore Mughal gardens, and immerse in the rich culture of Kashmir amidst
                         breathtaking Himalayan vistas</p>
-                     
+
                   </div>
                </div>
             </div>
          </div>
-         <div class="read_bt" style="padding-top: 40px ;"><a href="https://wa.link/fo6rze">Chat With Us&nbsp; 
-            <img src="./images/whatsapp.png" class="whatsapp" alt="whatsapp"></a></div>
+         <div class="read_bt" style="padding-top: 40px ;"><a href="https://wa.link/fo6rze">Chat With Us&nbsp;
+               <img src="./images/whatsapp.png" class="whatsapp" alt="whatsapp"></a></div>
       </div>
-      
+
       <!-- banner section end -->
    </div>
    <!-- about section start -->
@@ -154,7 +218,8 @@
             <div class="col-md-6">
                <div class="about_taital_main">
                   <h1 class="about_taital"><span style="color: #F97300">About</span> Us</h1>
-                  <p class="about_text">Vacation Planners India Tour & Travels, established in 2014, now has branches in
+                  <p data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out"
+                  data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center" class="about_text">Vacation Planners India Tour & Travels, established in 2014, now has branches in
                      Srinagar, Delhi, and Mumbai. In a world brimming with wonders waiting to be explored, there's no
                      greater joy than embarking on a journey of discovery through Vacation Planners. Whether you're a
                      seasoned explorer or a first-time adventurer,the allure of new experiences and distant horizons
@@ -166,216 +231,216 @@
                      traditional dances, or participating in local festivals,every encounter fosters a deeper
                      appreciation
                      and understanding of the diverse cultures that make our world so vibrant and fascinating.</p>
+
                </div>
+
             </div>
             <div class="col-md-6 padding_right_0">
-               <div><img src="./images/Doodpathri1.webp" class="about_img"></div>
-            </div>
+               <div id="video-container">
+                  <video id="myVideo" width="600" preload="metadata">
+                      <source src="/images/video.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+                  <div class="video-controls">
+                      <div class="control-image" id="playPauseControl">
+                          <img class="play-button" src="images/play-icon.png" >
+                          <img src="images/pause.png" class="pause-button" alt="">
+
+                      </div>
+                  </div>
+              </div>
+
          </div>
       </div>
    </div>
+  
    <!-- header section end -->
    <!-- services section start -->
-   
-     <div class="services_section layout_padding" >
-      <div id="service" class="container-fluid">
-         <h1 class="services_taital" id="services" style="margin-right: 15px; margin-left: 3rem;">Services </h1>
-         <p class="services_text" style=" margin-left: 3rem;">We <span style="color: #F97300">offer</span> Best <span
-               style="color: #F97300">Services</span></p>
-         <div class="services_section_2">
-            <div class="row">
-               <div class="card col-md-4 ">
-                  <img class="card-img-top" src="./images/OIP.jpg" alt="Card image cap">
-                  <div class="card-body">
-                     <h5 class="card-title">Packages</h5>
-                     <p class="card-text">Packages offer convenience by bundling flights, accommodation, and sometimes
-                        activities for one price. Research options to find the best deal and connect wit us.</p>
-                     <!-- <div class="space"> <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book now</a>
-                     </div></div> -->
-                     <!-- <hr class="my-4" /> -->
-                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book now</a>
-                  </div>
-               </div>
-               <div class="card col-md-4">
-                  <img class="card-img-top" src="./images/maxresdefault.jpg" alt="Card image cap">
-                  <div class="card-body">
-                     <h5 class="card-title">Best Flights</h5>
-                     <p class="card-text">Find the best flights by comparing prices, booking early, being flexible with
-                        dates, considering lay overs,and top rated using trusted booking platforms.</p>
-                        <!-- <div class="space"></div> -->
-                     <!-- <div class="space" style="height:10px !important;"></div> -->
-                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book now</a>
-                  </div>
-               </div>
-               <div class="card col-md-4">
-                  <img class="card-img-top" src="./images/destination-wedding-planning-tips-3.webp"
-                     alt="Card image cap">
-                  <div class="card-body">
-                     <h5 class="card-title">Destination Weddings</h5>
-                     <p class="card-text">Choose the best transportation by considering factors like cost, convenience,
-                        safety, and environmental impact. Options include public transit, rental cars.</p>
-                     <!-- <div class="space"></div> -->
-                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book now</a>
-                  </div>
-               </div>
-            </div>
-            <div class="space"></div>
-            <div class="row">
-               <div class="card col-md-4">
-                  <img class="card-img-top" src="./images/111082474_m.jpg" alt="Card image cap">
-                  <div class="card-body">
-                     <h5 class="card-title">Accomodation</h5>
-                     <p class="card-text">Discover the best accommodation by comparing prices, and considering location,
-                        amenities, and guest preferences.</p>
-                     <!-- <div class="space"></div> -->
-                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book now</a>
-                  </div>
-               </div>
-               <div class="card col-md-4">
-                  <img class="card-img-top" src="./images/OIP (2).jpg" alt="Card image cap">
-                  <div class="card-body">
-                     <h5 class="card-title">Transportation</h5>
-                     <p class="card-text"> Experience seamless journeys with our premium cab rental service. Affordable
-                        rates, Customer satisfication ,Book now!
-                        .</p>
-                     <!-- <div class="space"></div> -->
-                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book now</a>
-                  </div>
-               </div>
-               <div class="card col-md-4">
-                  <img class="card-img-top" src="./images/1670795250.mceu_36701482011670798634687.jpg"
-                     alt="Card image cap">
-                  <div class="card-body">
-                     <h5 class="card-title">Tour guides</h5>
-                     <p class="card-text">Explore historic landmarks, taste local cuisine, and immerse yourself in
-                        culture with our knowledgeable and friendly tourguides.".</p>
-                     <!-- <div class="space"></div> -->
-                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book now</a>
-                  </div>
-               </div>
-            </div>
-            <div class="space"></div>
-            <div class="row">
-               <div class="card col-md-4">
-                  <img class="card-img-top" src="./images/dinner.webp" alt="Card image cap">
-                  <div class="card-body">
-                     <h5 class="card-title">Business Meetings</h5>
-                     <p class="card-text">We Provide Professional business meeting setup services. we handle every
-                        detail for your success and finalize upcoming project deadlines</p>
-                     <!-- <div class="space"></div> -->
-                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">BOOK NOW</a>
-                  </div>
-               </div>
-               <div class="card col-md-4">
-                  <img class="card-img-top" src="./images/gala.jpg" alt="Card image cap">
-                  <div class="card-body">
-                     <h5 class="card-title">Gala Dinner</h5>
-                     <p class="card-text">A gala dinner is a formal, elegant event featuring fine dining, entertainment,
-                        speeches, and fundraising activities, often for charity..</p>
-                     <!-- <div class="space"></div> -->
-                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">BOOK NOW</a>
-                  </div>
-               </div>
-               <div class="card col-md-4">
-                  <img class="card-img-top" src="./images/dj.jpg" alt="Card image cap">
-                  <div class="card-body">
-                     <h5 class="card-title">DJS</h5>
-                     <p class="card-text">We provide music mixes, energize crowds, and set the mood at events. They use
-                        turntables, mixers, to blend tracks.</p>
-                     <!-- <div class="space"></div> -->
-                     <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">BOOK NOW</a>
-                  </div>
-               </div>
-            </div>
-         </div>
+
+
+
+   <h1 style=" margin-top: 10rem;" class="services_taital" id="services">Services </h1>
+   <p class="services_text">We <span style="color: #F97300">offer</span> Best <span
+         style="color: #F97300">Services</span></p>
+   <div class="services-card">
+      <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out"
+      data-aos-once="false" class="service-card">
+         <img class="service-image" src="./images/package.jpg" alt="">
+         <h3>Packages</h3>
+         <p>
+
+            Packages offer convenience by bundling flights, accommodation, and sometimes activities for one price.
+            Research options to find the best deal and connect wit us.</p>
+         <a href="#" class="button" data-toggle="modal" data-target="#exampleModal">Book now</a>
+
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" data-aos-easing="ease-in-out"
+      data-aos-once="false" class="service-card">
+         <img class="service-image" src="./images/maxresdefault.jpg" alt="">
+         <h3>Best Flights</h3>
+         <p>
+
+            Packages offer convenience by bundling flights, accommodation, and sometimes activities for one price.
+            Research options to find the best deal and connect wit us.</p>
+         <a href="#" class="button" data-toggle="modal" data-target="#exampleModal">Book now</a>
+
+      </div>
+      <div data-aos="fade-up" data-aos-delay="150" data-aos-duration="500" data-aos-easing="ease-in-out"
+      data-aos-once="false" class="service-card">
+         <img class="service-image" src="./images/destination-wedding-planning-tips-3.webp" alt="">
+         <h3>Destination Weddings</h3>
+         <p>
+
+            Choose the best transportation by considering factors like cost, convenience, safety, and environmental
+            impact. Options include public transit, rental cars.</p>
+         <a href="#" class="button" data-toggle="modal" data-target="#exampleModal">Book now</a>
+
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="500" data-aos-easing="ease-in-out"
+      data-aos-once="false" class="service-card">
+         <img class="service-image" src="./images/111082474_m.jpg" alt="">
+         <h3>Accomodation</h3>
+         <p>
+
+            Discover the best accommodation by comparing prices, and considering location, amenities, and guest
+            preferences..</p>
+         <a href="#" class="button" data-toggle="modal" data-target="#exampleModal">Book now</a>
+
+      </div>
+      <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="500" data-aos-easing="ease-in-out"
+      data-aos-once="false" class="service-card">
+         <img class="service-image" src="./images/OIP (2).jpg" alt="">
+         <h3>Transportation</h3>
+         <p>
+
+            Experience seamless journeys with our premium cab rental service. Affordable rates, Customer satisfication
+            ,Book now! .</p>
+         <a href="#" class="button" data-toggle="modal" data-target="#exampleModal">Book now</a>
+
+      </div>
+      <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-out"
+      data-aos-once="false" class="service-card">
+         <img class="service-image" src="./images/1670795250.mceu_36701482011670798634687.jpg" alt="">
+         <h3>Tour guides</h3>
+         <p>
+
+            Experience seamless journeys with our premium cab rental service. Affordable rates, Customer satisfication
+            ,Book now! .</p>
+         <a href="#" class="button" data-toggle="modal" data-target="#exampleModal">Book now</a>
+
+      </div>
+      <div data-aos="fade-up" data-aos-delay="350" data-aos-duration="500" data-aos-easing="ease-in-out"
+      data-aos-once="false" class="service-card">
+         <img class="service-image" src="./images/dinner.webp" alt="">
+         <h3>Business Meetings</h3>
+         <p>
+
+            We Provide Professional business meeting setup services. we handle every detail for your success and
+            finalize upcoming project deadlines.</p>
+         <a href="#" class="button" data-toggle="modal" data-target="#exampleModal">Book now</a>
+
+      </div>
+      <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="500" data-aos-easing="ease-in-out"
+      data-aos-once="false" class="service-card">
+         <img class="service-image" src="./images/gala.jpg" alt="">
+         <h3>Gala Dinner</h3>
+         <p>
+            A gala dinner is a formal, elegant event featuring fine dining, entertainment, speeches, and fundraising
+            activities, often for charity.</p>
+         <a href="#" class="button" data-toggle="modal" data-target="#exampleModal">Book now</a>
+
+      </div>
+      <div data-aos="fade-up" data-aos-delay="450" data-aos-duration="500" data-aos-easing="ease-in-out"
+      data-aos-once="false" class="service-card">
+         <img class="service-image" src="./images/dj.jpg" alt="">
+         <h3>DJs</h3>
+         <p>
+            We provide music mixes, energize crowds, and set the mood at events. They use turntables, mixers, to blend
+            tracks..</p>
+         <a href="#" class="button" data-toggle="modal" data-target="#exampleModal">Book now</a>
+
       </div>
    </div>
 
+
+
    <!--Cabs Rental Start Here-->
-   <div class="section" id="cab-rentals">       
-      <div class="container-fluid">
-         <div class="heading h1" style="text-align: left; margin-left: 5rem;"><span style="color: black">Cab</span> <span
+   <div style="margin-top: 10rem; margin-bottom: 1rem;" class="section" id="cab-rentals">
+      <div style="width: 80%;
+      padding-right: 15px;
+      padding-left: 15px;">
+         <div class="heading h1 rental-text"><span style="color: black">Cab</span> <span
                style="color: orange">Rental</span></div>
-         <div class="row gap-4 align-item-center justify-content-center section-2" style="padding:10px;width: 95%;
+         <div class="services-card" style="padding:10px;width: 95%;
        ;
         ">
             <!--Cards starts Here-->
-            <div class="col-md-4 col-12 rounded-2 aos-animate" style="background: white;
-            padding: 10px;" data-aos="fade-up" data-aos-delay="50">
-               <img src="./images/SuzukiErtiga-117.webp" alt="Ertiga" class="img-fluid rounded-2" loading="lazy"
-                  style="height: 300px;">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+               <img src="./images/SuzukiErtiga-117.webp" alt="Ertiga" class="service-image" loading="lazy">
                <div class="cab-name fw-bold h4 my-2">Ertiga</div>
                <div class="cab-capacity text-muted h6 mb-2">7 seater (with or with out AC)</div>
                <div class="data" data-target="#Modal-2" data-toggle="modal"></div>
 
-               <button class="btn btn-primary my-2;"style="margin-top: 10px;">Book</button>
+               <button class="button" style="margin-top: 10px;">Book</button>
             </div>
             <!--Cards ends here-->
             <!--Cards starts Here-->
-            <div class="col-md-4 col-12 rounded-2 aos-animate" style="background:white;
-            padding:10px;" data-aos="fade-up" data-aos-delay="50">
-               <img src="./images/swift dzire.webp" alt="Swift-Dzire" class="img-fluid rounded-2" loading="lazy"
-                  style="width: 100%; height: 300px; object-fit: cover;">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+               <img src="./images/swift dzire.webp" alt="Swift-Dzire" class="service-image" loading="lazy">
                <div class="cab-name fw-bold h4 my-2">Dzire</div>
                <div class="cab-capacity text-muted h6 mb-2">For Couples
                   (with or with out AC)</div>
                <div class="data" data-target="#Modal-2" data-toggle="modal"></div>
 
-               <button class="btn btn-primary my-2">Book</button>
+               <button class="button">Book</button>
             </div>
             <!--Cards ends here-->
             <!--Cards starts Here-->
-            <div class="col-md-4 col-12 rounded-2 aos-animate" style="background: white;
-            padding: 10px;" data-aos="fade-up" data-aos-delay="50">
-               <img src="./images/tempo.jpg" alt="Force-tempo" class="img-fluid rounded-2" loading="lazy"
-                  style="width: 100%; height: 300px; object-fit: cover;">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+               <img src="./images/tempo.jpg" alt="Force-tempo" class="service-image" loading="lazy">
                <div class="cab-name fw-bold h4 my-2">Force tempo</div>
-               <div class="cab-capacity text-muted h6 mb-2">13, 17, 20, 26 seater(with or with out AC)</div>
+               <div class="cab-capacity text-muted h6 mb-2">13/17/2026 seater(with or with out AC)</div>
                <div class="data" data-target="#Modal-2" data-toggle="modal"></div>
 
-               <button class="btn btn-primary my-2">Book</button>
+               <button class="button">Book</button>
             </div>
+
             <!--Cards ends here-->
             <!--Cards starts Here-->
-            <div class="col-md-4 col-12 rounded-2 aos-animate" style="background: white;
-            padding: 10px;" data-aos="fade-up" data-aos-delay="50">
-               <img src="./images/Toyota-Etios.webp" alt="Toyota-Etios" class="img-fluid rounded-2" loading="lazy"
-                  style="width: 100%; height: 300px; object-fit: cover;">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+               <img src="./images/Toyota-Etios.webp" alt="Toyota-Etios" class="service-image" loading="lazy">
                <div class="cab-name fw-bold h4 my-2">Toyoto Etios</div>
                <div class="cab-capacity text-muted h6 mb-2">For Couples
                   (with or with out AC)</div>
                <div class="data" data-target="#Modal-2" data-toggle="modal"></div>
 
-               <button class="btn btn-primary my-2">Book</button>
+               <button class="button">Book</button>
             </div>
             <!--Cards ends here-->
             <!--Cards starts Here-->
-            <div class="col-md-4 col-12 rounded-2 aos-animate" style="background: white;
-            padding: 10px;" data-aos="fade-up" data-aos-delay="50">
-               <img src="./images/30083_INNOVA_CRYSTA_front.jpg" alt="Innova-Crysta" class="img-fluid rounded-2"
-                  loading="lazy" style="width: 100%; height: 300px; object-fit: cover;">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+               <img src="./images/30083_INNOVA_CRYSTA_front.jpg" alt="Innova-Crysta" class="service-image"
+                  loading="lazy">
                <div class="cab-name fw-bold h4 my-2">Innova Crysta</div>
                <div class="cab-capacity text-muted h6 mb-2">7 Seater(with or with out AC)</div>
                <div class="data" data-target="#Modal-2" data-toggle="modal"></div>
 
-               <button class="btn btn-primary my-2">Book</button>
+               <button class="button">Book</button>
             </div>
             <!--Cards ends here-->
             <!--Cards starts Here-->
-            <div class="col-md-4 col-12 rounded-2 aos-animate" style="background: white;
-            padding: 10px;" data-aos="fade-up" data-aos-delay="50">
-               <img src="./images/innova.jpeg" alt="Innova-Crysta" class="img-fluid rounded-2" loading="lazy"
-                  style="width: 100%; height: 300px; object-fit: cover;">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="50">
+               <img src="./images/innova.jpeg" alt="Innova-Crysta" class="service-image" loading="lazy">
                <div class="cab-name fw-bold h4 my-2">Innova</div>
                <div class="cab-capacity text-muted h6 mb-2">7 Seater(with or with out AC)</div>
                <div class="data" data-target="#Modal-2" data-toggle="modal"></div>
-               <button class="btn btn-primary my-2">Book</button>
+               <button class="button">Book</button>
             </div>
             <!--Cards ends here-->
          </div>
       </div>
    </div>
-   
+
    <!-- The Modal 2 -->
    <div class="modal fade" id="Modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
@@ -388,7 +453,7 @@
                </button>
             </div>
             <form action="./forms/car.php" method="post">
-            <div class="modal-body">
+               <div class="modal-body">
                   <div class="form-group">
                      <label for="recipient-name" class="col-form-label">Name:</label>
                      <input required type="text" name="name" class="form-control" id="recipient-name">
@@ -399,19 +464,20 @@
                   </div>
                   <div class="form-group">
                      <label for="message-text" class="col-form-label">Contact:</label>
-                     <textarea class="form-control" name="contact" id="message-text" inputmode="numeric" minlength="10" maxlength="10" required></textarea>
+                     <textarea class="form-control" name="contact" id="message-text" inputmode="numeric" minlength="10"
+                        maxlength="10" required></textarea>
                   </div>
                   <div class="form-group">
                      <label for="message-text" class="col-form-label">Email ID:</label>
                      <textarea class="form-control" name="email" id="message-text" required></textarea>
                   </div>
                </div>
-            <div class="modal-footer">
-               <button type="submit" class="btn btn-primary">
-                  <span style="color: white">Send Message</span>
-               </button>
-            </div>
-         </form>
+               <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">
+                     <span style="color: white">Send Message</span>
+                  </button>
+               </div>
+            </form>
          </div>
       </div>
    </div>
@@ -436,7 +502,8 @@
                   </div>
                   <div class="form-group">
                      <label for="no-of-guests" class="col-form-label">No of guests:</label>
-                     <input required type="number" inputmode="numeric" class="form-control" id="guests" name="guests-count" required>
+                     <input required type="number" inputmode="numeric" class="form-control" id="guests"
+                        name="guests-count" required>
                   </div>
                   <div class="form-group">
                      <label for="starting-day" class="col-form-label">From:</label>
@@ -448,7 +515,8 @@
                   </div>
                   <div class="form-group">
                      <label for="message-text" class="col-form-label">Contact:</label>
-                     <input required type="number" minlength="10" maxlength="10" inputmode="numeric" class="form-control" id="contact-text" name="contact" required>
+                     <input required type="number" minlength="10" maxlength="10" inputmode="numeric"
+                        class="form-control" id="contact-text" name="contact" required>
                   </div>
                   <div class="form-group">
                      <label for="message-text" class="col-form-label">Email ID:</label>
@@ -458,7 +526,7 @@
             </div>
             <div class="modal-footer">
                <button type="submit" class="btn btn-primary">
-                     <span style="color: white">Send Message</span></button>
+                  <span style="color: white">Send Message</span></button>
             </div>
             </form>
          </div>
@@ -574,6 +642,13 @@
             exceptional travel experience.</p>
       </div>
    </div>
+   <div class="floating-icon">
+      <a href="https://api.whatsapp.com/send?phone=919906974441">
+          <img src="/images/whatsapp.png" alt="Floating Icon">
+      </a>
+
+  </div>
+
    <!-- choose section end -->
    <!-- footer section start -->
    <img src="./images/WhatsApp Image 2024-05-30 at 09.53.48_811b67bb.jpg" class="image">
@@ -600,9 +675,15 @@
          </div>
          <div class="social_icon">
             <ul>
-               <li class="list-inline-item mx-1"><a href="https://www.facebook.com/share/9aRmJHKse8t4tVqM/?mibextid=qi2Omg" target="_blank" class="text-white" style="margin-left: 20px;"><i class="fa-brands fa-facebook"></i></a></li>
-               <li class="list-inline-item mx-1"><a href="https://www.instagram.com/vacationplannersindia?igsh=bzRiYnRoZ2dxeDgy" target="_blank" class="text-white" style="margin-left: 20px;"><i class="fa-brands fa-instagram"></i></a></li>
-               <li class="list-inline-item mx-1"><a href="https://x.com/vpi_india?t=edkUeDDI2WtnIDLnLst9LQ&s=31" target="_blank" class="text-white" style="margin-left: 20px;"><i class="fa-brands fa-twitter"></i></a></li>
+               <li class="list-inline-item mx-1"><a
+                     href="https://www.facebook.com/share/9aRmJHKse8t4tVqM/?mibextid=qi2Omg" target="_blank"
+                     class="text-white" style="margin-left: 20px;"><i class="fa-brands fa-facebook"></i></a></li>
+               <li class="list-inline-item mx-1"><a
+                     href="https://www.instagram.com/vacationplannersindia?igsh=bzRiYnRoZ2dxeDgy" target="_blank"
+                     class="text-white" style="margin-left: 20px;"><i class="fa-brands fa-instagram"></i></a></li>
+               <li class="list-inline-item mx-1"><a href="https://x.com/vpi_india?t=edkUeDDI2WtnIDLnLst9LQ&s=31"
+                     target="_blank" class="text-white" style="margin-left: 20px;"><i
+                        class="fa-brands fa-twitter"></i></a></li>
             </ul>
          </div>
       </div>
@@ -633,16 +714,17 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
    <script>
+      
       $(window).on('load', function () {
          $('#exampleModal').modal('show');
-         document.querySelectorAll("#cab-rentals button").forEach(item=>{
-         item.onclick = function(e){
-            document.getElementById("Modal-2").classList.add("show");
-            document.querySelector("div[data-target='#Modal-2']").click();
-            document.getElementById("car-name").value = e.target.parentElement.querySelector(".cab-name").innerText;
-         }
-      });
-   })
+         document.querySelectorAll("#cab-rentals button").forEach(item => {
+            item.onclick = function (e) {
+               document.getElementById("Modal-2").classList.add("show");
+               document.querySelector("div[data-target='#Modal-2']").click();
+               document.getElementById("car-name").value = e.target.parentElement.querySelector(".cab-name").innerText;
+            }
+         });
+      })
       function toggleNavbar() {
          document.getElementById("navbarNav").classList.toggle("show");
          document.querySelector(".navbar-toggler").classList.toggle("collapsed")
@@ -667,9 +749,14 @@
          window.location.href = mailtoLink;
       });
 
-      
+
 
    </script>
+<script src="js/video.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init();
+</script>
 
 </body>
 

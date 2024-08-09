@@ -586,7 +586,8 @@ pre code {
 }
 
 .container-fluid {
-  width: 94%;
+  width: 94%
+  ;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -598,9 +599,8 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }
+
 
 .no-gutters {
   margin-right: 0;
@@ -840,6 +840,8 @@ pre code {
     flex-grow: 1;
     max-width: 100%;
   }
+
+  
   .col-sm-auto {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
@@ -2358,13 +2360,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
+  background-color: #F97300;
   border-color: #007bff;
 }
 
+
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
+  background-color: #F97300;
   border-color: #0062cc;
 }
 

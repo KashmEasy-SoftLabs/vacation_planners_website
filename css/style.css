@@ -209,7 +209,26 @@ blockquote {
     margin: 20px 0 20px;
     padding: 30px;
 }
-
+.featured-video-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+  margin-top: 100rem;
+  border: 1px solid rgb(255, 255, 255);
+}
+.featured-video{
+height: 29rem;
+}
+.featured-title{
+    width: 100%;
+    float: left;
+    font-size: 50px;
+    color: #1f1f1f;
+    font-weight: bold;
+    padding-right: 1px;
+ margin-left: 48rem;
+}
 button {
     border: 0;
     margin: 0;
@@ -252,9 +271,12 @@ button {
 @media only screen and (max-width: 600px) {
     .header_section {
         height: auto;
+        
         padding: 30px 0;
     }
-
+.featured-video{
+    height: 15rem;
+}
     #header-section {
         padding: 40px 0;
     }
@@ -487,6 +509,7 @@ button {
     /* margin-left: 5px;
     margin-right: 10px; */
     background-color: white;
+ 
 }
 
 .card-title {
@@ -524,16 +547,13 @@ button {
 
 
 .services_section {
-    width: 94%;
+    width: 100%;
     padding-bottom: 90px;
-    padding-left: 15px;
-    padding-right: 15px;
+  
  
 }
 
-.services_section_2{
-    margin-left: 4rem ;
-}
+
 .services_section .card .card-img-top{
     height:300px !important;
 }
@@ -544,7 +564,7 @@ button {
     color: #1f1f1f;
     font-weight: bold;
     padding-right: 1px;
- 
+ margin-left: 14rem;
    
     
     
@@ -557,6 +577,7 @@ button {
     font-size: 20px;
     /* margin: auto; */
     /* margin-right: 10px; */
+    margin-left: 14rem;
     
 }
 
@@ -644,6 +665,8 @@ button {
 .btn-primary a:active {
     color: #ffffff;
     background-color: #0C0C0C;
+
+
 }
 
 
@@ -716,7 +739,7 @@ button {
 .about_img {
     width: 100%;
     float: left;
-    padding-top:70px;
+    height: 27rem;
 }
 
 
@@ -828,7 +851,10 @@ button {
     padding-top: 30px;
     text-align: center;
 }
-
+.logo-image{
+    height: 6rem;
+  margin-left: 106rem;
+}
 .client_section_2 {
     width: 100%;
     margin: 0 auto;
@@ -1283,9 +1309,70 @@ body {
     color: white;
     background-color: #F97300;
 }
+.rental-text{
+    text-align: left; margin-left: 15rem;
+}
 
+
+.floating-icon {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    z-index: 1000; /* Ensure it's on top of other elements */
+    border-radius: 50%; /* Optional rounded corners */
+    padding: 10px; /* Padding around the icon */
+  }
+  
+  .floating-icon img {
+    width: 70px; /* Icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+  .help {
+    margin-left: -1rem;
+    margin-top: -1rem;
+    color: black;
+    font-weight: bold;
+  }
+  .floating-icon a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
 /*mobile screen*/
 @media only screen and (max-width: 600px) {
+    #myVideo{
+        width: 55%;
+    }
+    .logo-image{
+  display: none;
+    }
+    .featured-title{
+        width: 10rem;
+        float: left;
+        font-size: 30px;
+        color: #1f1f1f;
+        font-weight: bold;
+        padding-right: 1px;
+     margin-left: 5rem;
+    }
+    .featured-video-div{
+        height: 20rem;
+        width: 100%;
+    }
+    .rental-text{
+        margin-left: 5rem;
+    }
+    .services_taital{
+       
+        margin-left: 5rem;
+        width: 72%;
+    }
+    .services_text{
+        margin-left: 4rem;
+    }
     .copyright_text {
         font-size: 16px;
     }
@@ -1308,12 +1395,15 @@ body {
     } */
     #cab-rentals .aos-animate{
         margin:10px 0;
-        
+        border-radius: 1rem;
        
     }
-
+#cab-rentals{
+    border-radius: 1rem;
+}
     #cab-rentals .aos-animate img{
         object-fit: cover;
+        
        
     }
 
@@ -1340,13 +1430,15 @@ body {
 
 
 #service .card{
-    padding:10px !important;
+    border-radius: 1rem;
 }
 
-*{
-    border-radius: 1px solid red;
-}
+
 
 .section-2{
     margin-left: 4rem;
 }
+
+
+
+
