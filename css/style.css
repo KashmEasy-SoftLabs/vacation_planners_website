@@ -209,26 +209,30 @@ blockquote {
     margin: 20px 0 20px;
     padding: 30px;
 }
-.featured-video-div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50rem;
-  margin-top: 100rem;
-  border: 1px solid rgb(255, 255, 255);
+
+.featured-video-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    margin-top: 100rem;
+    border: 1px solid rgb(255, 255, 255);
 }
-.featured-video{
-height: 29rem;
+
+.featured-video {
+    height: 29rem;
 }
-.featured-title{
+
+.featured-title {
     width: 100%;
     float: left;
     font-size: 50px;
     color: #1f1f1f;
     font-weight: bold;
     padding-right: 1px;
- margin-left: 48rem;
+    margin-left: 48rem;
 }
+
 button {
     border: 0;
     margin: 0;
@@ -271,15 +275,18 @@ button {
 @media only screen and (max-width: 600px) {
     .header_section {
         height: auto;
-        
+
         padding: 30px 0;
     }
-.featured-video{
-    height: 15rem;
-}
+
+    .featured-video {
+        height: 15rem;
+    }
+
     #header-section {
         padding: 40px 0;
     }
+
     .mobile_menu {
         width: 100%;
         float: left;
@@ -390,6 +397,7 @@ button {
     color: #F97300;
     /* background-color: #F97300; */
 }
+
 .mb-lg-0,
 .my-lg-0 {
     margin-bottom: 0 !important;
@@ -448,6 +456,7 @@ button {
     justify-content: center;
     margin-top: 50px;
 }
+
 .read_bt a {
     display: flex;
     align-items: center;
@@ -480,12 +489,14 @@ button {
     background-color: #F97300;
     color: white;
 }
-.book-now{
-    background:black;
+
+.book-now {
+    background: black;
 }
-.book-now:hover{
+
+.book-now:hover {
     background-color: #F97300;
-    color:black !important;
+    color: black !important;
 }
 
 /* banner section end */
@@ -505,11 +516,11 @@ button {
 
 
 .card {
-     /* height: fit-content; */
+    /* height: fit-content; */
     /* margin-left: 5px;
     margin-right: 10px; */
     background-color: white;
- 
+
 }
 
 .card-title {
@@ -528,12 +539,12 @@ button {
 
 }
 
-.card-body { 
-   
-   background-color: white;
-   /* margin-bottom: 10px; */
- 
-    
+.card-body {
+
+    background-color: white;
+    /* margin-bottom: 10px; */
+
+
 }
 
 .card-text {
@@ -549,14 +560,15 @@ button {
 .services_section {
     width: 100%;
     padding-bottom: 90px;
-  
- 
+
+
 }
 
 
-.services_section .card .card-img-top{
-    height:300px !important;
+.services_section .card .card-img-top {
+    height: 300px !important;
 }
+
 .services_taital {
     width: 100%;
     float: left;
@@ -564,10 +576,10 @@ button {
     color: #1f1f1f;
     font-weight: bold;
     padding-right: 1px;
- margin-left: 14rem;
-   
-    
-    
+    margin-left: 10rem;
+
+
+
 
 }
 
@@ -577,8 +589,8 @@ button {
     font-size: 20px;
     /* margin: auto; */
     /* margin-right: 10px; */
-    margin-left: 14rem;
-    
+    margin-left: 10rem;
+
 }
 
 
@@ -586,12 +598,13 @@ button {
     /* color: white; */
     background-color: #F97300;
 }
+
 #cab-rentals .aos-animate button:hover {
     /* color: white; */
     background-color: #F97300;
 }
 
-#cab-rentals .p-4{
+#cab-rentals .p-4 {
     padding: 7px;
 }
 
@@ -604,16 +617,17 @@ button {
         font-size: 28px;
 
     }
+
     .services_section_2 {
         width: 94%;
         /* float: left; */
         /* margin-top: 90px; */
         margin-left: 2rem;
     }
-    
-.section-2{
-    margin-left: 0rem  !important;
-}
+
+    .section-2 {
+        margin-left: 0rem !important;
+    }
 }
 
 
@@ -684,7 +698,7 @@ button {
 .about_taital_main {
     width: 100%;
     padding-left: 20px;
-    
+
 }
 
 .padding_right_0 {
@@ -851,10 +865,12 @@ button {
     padding-top: 30px;
     text-align: center;
 }
-.logo-image{
+
+.logo-image {
     height: 6rem;
-  margin-left: 106rem;
+    margin-left: 106rem;
 }
+
 .client_section_2 {
     width: 100%;
     margin: 0 auto;
@@ -1201,7 +1217,7 @@ button {
     width: 100%;
     /* margin: 0 auto; */
     text-align: center;
-    
+
 }
 
 .social_icon ul {
@@ -1214,11 +1230,12 @@ button {
 .social_icon li {
     float: left;
     /* padding: 3px 2px; */
-    font-size: 25px; 
-   transition: color 0.3s ease;
+    font-size: 25px;
+    transition: color 0.3s ease;
 }
+
 .social_icon ul li a i:hover {
-    color:  #F97300;
+    color: #F97300;
 }
 
 .location_main {
@@ -1251,22 +1268,23 @@ button {
     float: left;
 }
 
-#footer-button{
-  
+#footer-button {
+
     width: 200px;
     background-color: white;
     color: black;
     border: none;
-    
+
 }
 
-#footer-button:hover{
+#footer-button:hover {
     background-color: #e27141;
 }
 
 body {
     font-size: 16px;
 }
+
 .btn-primary a:hover {
     color: white;
     background-color: #F97300;
@@ -1305,74 +1323,94 @@ body {
     width: 30%;
     padding-top: 25px;
 }
-.btn :hover{
+
+.btn :hover {
     color: white;
     background-color: #F97300;
 }
-.rental-text{
-    text-align: left; margin-left: 15rem;
+
+.rental-text {
+    text-align: left;
+    margin-left: 10rem;
 }
 
 
 .floating-icon {
     position: fixed;
-    bottom: 20px; /* Distance from the bottom */
-    right: 20px; /* Distance from the right */
-    z-index: 1000; /* Ensure it's on top of other elements */
-    border-radius: 50%; /* Optional rounded corners */
-    padding: 10px; /* Padding around the icon */
-  }
-  
-  .floating-icon img {
-    width: 70px; /* Icon size */
-    height: auto; /* Maintain aspect ratio */
+    bottom: 20px;
+    /* Distance from the bottom */
+    right: 20px;
+    /* Distance from the right */
+    z-index: 1000;
+    /* Ensure it's on top of other elements */
+    border-radius: 50%;
+    /* Optional rounded corners */
+    padding: 10px;
+    /* Padding around the icon */
+}
+
+.floating-icon img {
+    width: 70px;
+    /* Icon size */
+    height: auto;
+    /* Maintain aspect ratio */
     margin-right: 2rem;
     margin-bottom: 1rem;
-  }
-  .help {
+}
+
+.help {
     margin-left: -1rem;
     margin-top: -1rem;
     color: black;
     font-weight: bold;
-  }
-  .floating-icon a {
+}
+
+.floating-icon a {
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
-  }
+}
+
 /*mobile screen*/
 @media only screen and (max-width: 600px) {
-    #myVideo{
+    #myVideo {
         width: 55%;
     }
-    .logo-image{
-  display: none;
+
+    .logo-image {
+        display: none;
     }
-    .featured-title{
+
+    .featured-title {
         width: 10rem;
         float: left;
         font-size: 30px;
         color: #1f1f1f;
         font-weight: bold;
         padding-right: 1px;
-     margin-left: 5rem;
+        margin-left: 5rem;
     }
-    .featured-video-div{
+
+    .featured-video-div {
         height: 20rem;
         width: 100%;
     }
-    .rental-text{
+
+    .rental-text {
         margin-left: 5rem;
     }
-    .services_taital{
-       
+
+    .services_taital {
+
         margin-left: 5rem;
         width: 72%;
     }
-    .services_text{
+
+    .services_text {
         margin-left: 4rem;
     }
+
     .copyright_text {
         font-size: 16px;
     }
@@ -1385,60 +1423,61 @@ body {
         margin: 30px;
 
     }
-    .services_section .card{
-        margin:10px;
+
+    .services_section .card {
+        margin: 10px;
     }
+
     /* #cab-rentals .row{
         margin:10px !important;
       
        
     } */
-    #cab-rentals .aos-animate{
-        margin:10px 0;
+    #cab-rentals .aos-animate {
+        margin: 10px 0;
         border-radius: 1rem;
-       
+
     }
-#cab-rentals{
-    border-radius: 1rem;
-}
-    #cab-rentals .aos-animate img{
+
+    #cab-rentals {
+        border-radius: 1rem;
+    }
+
+    #cab-rentals .aos-animate img {
         object-fit: cover;
-        
-       
+
+
     }
 
-  
+
 }
-.services_section .card{
+
+.services_section .card {
     /* margin:0 2px; */
-    box-shadow: 5px 5px 25px rgba(0,0,0,0.3);
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
 }
 
-#cab-rentals .aos-animate{
-    box-shadow: 5px 5px 25px rgba(0,0,0,0.3);
-  
+#cab-rentals .aos-animate {
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
 
-} 
 
-.fa:hover{
+}
+
+.fa:hover {
     color: #e27141;
 }
 
-#service .container-fluid{
+#service .container-fluid {
     padding: 2rem;
 }
 
 
-#service .card{
+#service .card {
     border-radius: 1rem;
 }
 
 
 
-.section-2{
+.section-2 {
     margin-left: 4rem;
 }
-
-
-
-
