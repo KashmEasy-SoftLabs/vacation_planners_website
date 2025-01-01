@@ -452,7 +452,7 @@ Product Area
                                     <div class="details">
                                         <p><a href="tel:+919906974441" class="info-box_link"> +91 9906 974 441</a>
                                         </p>
-                                        <p><a href="tel:+919555264441" class="info-box_link">+91 9555 264 441 </a></p>
+                                        <p><a href="tel:+919070092077" class="info-box_link">+91 9070 092 077 </a></p>
                                     </div>
                                 </div>
                                 <div class="info-box_text">
@@ -526,17 +526,17 @@ modal Area
     <!-- Modal -->
     <div id="bookingModal" style="display: none;" class="modal">
         <div class="modal-content">
+            <p style="color: green; font-weight: 600;font-size: 20px;" id="form-messages"></p>
             <span class="close">&times;</span>
             <form id="bookingForm" class="contact-form style2 ">
                 <h3 class="sec-title mb-30 text-capitalize">Book a Car</h3>
-                <p class="form-messages mb-0 mt-3"></p>
                 <div class="row">
                     <div class="col-12 form-group">
-                        <input type="text" class="form-control" name="name" id="name3" placeholder=" Name">
+                        <input type="text" class="form-control" required min="5" name="name" id="name3" placeholder=" Name">
                         <i class="fa fa-user"></i>
                     </div>
                     <div class="col-12 form-group">
-                        <input type="email" class="form-control" name="email" id="email3" placeholder="Your Mail">
+                        <input type="email" class="form-control" required min="8" name="email" id="email3" placeholder="Your Mail">
                         <i class="fa fa-envelope"></i>
                     </div>
                     <div class="col-12 form-group">
@@ -547,12 +547,12 @@ modal Area
                     </div>
                     <div class="col-12 form-group">
 
-                        <input type="number" class="form-control" name="phone" id="carName" placeholder="Phone">
+                        <input type="number" class="form-control" min="10" required name="phone" id="carName" placeholder="Phone">
                         <i class="fa fa-phone"></i>
 
                     </div>
                     <div class="form-group col-12">
-                        <textarea name="message" id="message" cols="30" rows="3" class="form-control"
+                        <textarea name="message" id="message" required minlength="10" cols="30" rows="3" class="form-control"
                             placeholder="Your Message"></textarea>
                         <i class="fa fa-envelope"></i>
                     </div>
